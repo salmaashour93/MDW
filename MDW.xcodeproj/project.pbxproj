@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C0D67AE1D01DC32003F9DD9 /* MyCustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0D67AD1D01DC32003F9DD9 /* MyCustomViewCell.swift */; };
 		8C6362161CF2400C00D4C917 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6362151CF2400C00D4C917 /* AppDelegate.swift */; };
 		8C6362181CF2400C00D4C917 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6362171CF2400C00D4C917 /* ViewController.swift */; };
 		8C63621B1CF2400C00D4C917 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C6362191CF2400C00D4C917 /* Main.storyboard */; };
@@ -14,6 +15,11 @@
 		8C6362201CF2400C00D4C917 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C63621E1CF2400C00D4C917 /* LaunchScreen.storyboard */; };
 		8C63622B1CF2400C00D4C917 /* MDWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C63622A1CF2400C00D4C917 /* MDWTests.swift */; };
 		8C6362361CF2400C00D4C917 /* MDWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6362351CF2400C00D4C917 /* MDWUITests.swift */; };
+		8CAD36A21D01BE3B009D0605 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAD369A1D01BE3B009D0605 /* MMDrawerBarButtonItem.m */; };
+		8CAD36A31D01BE3B009D0605 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAD369C1D01BE3B009D0605 /* MMDrawerController.m */; };
+		8CAD36A41D01BE3B009D0605 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAD369F1D01BE3B009D0605 /* MMDrawerVisualState.m */; };
+		8CAD36A51D01BE3B009D0605 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAD36A11D01BE3B009D0605 /* UIViewController+MMDrawerController.m */; };
+		8CAD36A71D01BEFB009D0605 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAD36A61D01BEFB009D0605 /* LeftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C0D67AD1D01DC32003F9DD9 /* MyCustomViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomViewCell.swift; sourceTree = "<group>"; };
 		8C6362121CF2400C00D4C917 /* MDW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C6362151CF2400C00D4C917 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C6362171CF2400C00D4C917 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,17 @@
 		8C6362311CF2400C00D4C917 /* MDWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C6362351CF2400C00D4C917 /* MDWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDWUITests.swift; sourceTree = "<group>"; };
 		8C6362371CF2400C00D4C917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CAD36981D01BE3A009D0605 /* MDW-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MDW-Bridging-Header.h"; sourceTree = "<group>"; };
+		8CAD36991D01BE3B009D0605 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		8CAD369A1D01BE3B009D0605 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		8CAD369B1D01BE3B009D0605 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		8CAD369C1D01BE3B009D0605 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		8CAD369D1D01BE3B009D0605 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		8CAD369E1D01BE3B009D0605 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		8CAD369F1D01BE3B009D0605 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		8CAD36A01D01BE3B009D0605 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		8CAD36A11D01BE3B009D0605 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		8CAD36A61D01BEFB009D0605 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +95,7 @@
 		8C6362091CF2400B00D4C917 = {
 			isa = PBXGroup;
 			children = (
+				8CAD36971D01BCFD009D0605 /* nav classes */,
 				8C6362141CF2400C00D4C917 /* MDW */,
 				8C6362291CF2400C00D4C917 /* MDWTests */,
 				8C6362341CF2400C00D4C917 /* MDWUITests */,
@@ -103,6 +122,8 @@
 				8C63621C1CF2400C00D4C917 /* Assets.xcassets */,
 				8C63621E1CF2400C00D4C917 /* LaunchScreen.storyboard */,
 				8C6362211CF2400C00D4C917 /* Info.plist */,
+				8CAD36A61D01BEFB009D0605 /* LeftViewController.swift */,
+				8C0D67AD1D01DC32003F9DD9 /* MyCustomViewCell.swift */,
 			);
 			path = MDW;
 			sourceTree = "<group>";
@@ -123,6 +144,23 @@
 				8C6362371CF2400C00D4C917 /* Info.plist */,
 			);
 			path = MDWUITests;
+			sourceTree = "<group>";
+		};
+		8CAD36971D01BCFD009D0605 /* nav classes */ = {
+			isa = PBXGroup;
+			children = (
+				8CAD36991D01BE3B009D0605 /* MMDrawerBarButtonItem.h */,
+				8CAD369A1D01BE3B009D0605 /* MMDrawerBarButtonItem.m */,
+				8CAD369B1D01BE3B009D0605 /* MMDrawerController.h */,
+				8CAD369C1D01BE3B009D0605 /* MMDrawerController.m */,
+				8CAD369D1D01BE3B009D0605 /* MMDrawerController+Subclass.h */,
+				8CAD369E1D01BE3B009D0605 /* MMDrawerVisualState.h */,
+				8CAD369F1D01BE3B009D0605 /* MMDrawerVisualState.m */,
+				8CAD36A01D01BE3B009D0605 /* UIViewController+MMDrawerController.h */,
+				8CAD36A11D01BE3B009D0605 /* UIViewController+MMDrawerController.m */,
+				8CAD36981D01BE3A009D0605 /* MDW-Bridging-Header.h */,
+			);
+			name = "nav classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CAD36A41D01BE3B009D0605 /* MMDrawerVisualState.m in Sources */,
 				8C6362181CF2400C00D4C917 /* ViewController.swift in Sources */,
+				8CAD36A21D01BE3B009D0605 /* MMDrawerBarButtonItem.m in Sources */,
+				8CAD36A51D01BE3B009D0605 /* UIViewController+MMDrawerController.m in Sources */,
+				8CAD36A31D01BE3B009D0605 /* MMDrawerController.m in Sources */,
+				8C0D67AE1D01DC32003F9DD9 /* MyCustomViewCell.swift in Sources */,
+				8CAD36A71D01BEFB009D0605 /* LeftViewController.swift in Sources */,
 				8C6362161CF2400C00D4C917 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,10 +441,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MDW/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JETS.MDW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MDW-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -408,10 +455,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MDW/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JETS.MDW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MDW-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -482,6 +531,7 @@
 				8C63623C1CF2400C00D4C917 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C63623D1CF2400C00D4C917 /* Build configuration list for PBXNativeTarget "MDWTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +540,7 @@
 				8C63623F1CF2400C00D4C917 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C6362401CF2400C00D4C917 /* Build configuration list for PBXNativeTarget "MDWUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +549,7 @@
 				8C6362421CF2400C00D4C917 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

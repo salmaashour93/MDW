@@ -20,6 +20,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func openNav(sender: AnyObject) {
+        
+        var appDele: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDele.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion:nil)
+    }
 
 }
 
