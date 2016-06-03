@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YRr-tS-1df">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Zxu-vi-zf9">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--All Days-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="MDW" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,8 +22,9 @@
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="All Days" image="allDays" id="zrU-yq-pla"/>
                     <navigationItem key="navigationItem" id="X8L-Po-PGc">
                         <barButtonItem key="leftBarButtonItem" image="reveal-icon" id="hds-6H-Tgj">
                             <connections>
@@ -35,26 +36,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1082.5" y="308.5"/>
+            <point key="canvasLocation" x="1662.5" y="258.5"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="0Om-uF-9Q2">
+        <!--Day Two-->
+        <scene sceneID="a5w-se-10c">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YRr-tS-1df" sceneMemberID="viewController">
-                    <toolbarItems/>
+                <viewController id="f25-Ey-zUA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Day Two" image="secondDay" id="ztg-dj-24o"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nES-7x-G2r">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4XK-yw-Fl5"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="smc-Wm-gjN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YRQ-48-Rea" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="271" y="309"/>
+            <point key="canvasLocation" x="1662.5" y="-458.5"/>
         </scene>
         <!--Left View Controller-->
         <scene sceneID="CKm-yv-UmJ">
@@ -65,7 +59,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Khn-8b-9Ti"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DZX-QW-zQV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mobile Developer " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQ9-7P-55c">
@@ -112,15 +106,37 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fXz-8F-KrZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1497" y="343"/>
+            <point key="canvasLocation" x="2072.5" y="258.5"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="TGW-gR-wUh">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Zxu-vi-zf9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="8WO-K0-o9A"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="wG0-fM-WUj">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="4Pz-Wt-3ML"/>
+                        <segue destination="f25-Ey-zUA" kind="relationship" relationship="viewControllers" id="jxY-1T-l6T"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NsY-u3-ekV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="925" y="206"/>
         </scene>
     </scenes>
     <resources>
+        <image name="allDays" width="30" height="29"/>
         <image name="logo.png" width="148" height="85"/>
         <image name="reveal-icon" width="22" height="17"/>
+        <image name="secondDay" width="30" height="30"/>
     </resources>
 </document>
