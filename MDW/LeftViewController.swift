@@ -11,7 +11,7 @@ import UIKit
 class LeftViewController: UIViewController , UITableViewDataSource, UITableViewDelegate {
     
     var menuItems:[String] = ["Agenda","My agenda","Speakers","Exihiptors","Profile", "Logout", ""];
-    var menuPics:[String] = ["agenda.png","myagenda.png","speaker.png","exihiptors.png","profile.png", "logout.png", "logo1.png"];
+    var menuPics:[String] = ["agenda","myagenda","speaker","exihiptors","profile", "logout", "logo1"];
     
     
     override func viewDidLoad() {
