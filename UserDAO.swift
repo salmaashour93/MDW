@@ -50,4 +50,61 @@ class UserDAO  {
         
    }
     
+    func selectAll(managedObjectContext : NSManagedObjectContext) -> [User]{
+        let fetched = NSFetchRequest(entityName : "User")
+        var res : [User]!
+        do{
+            res = try managedObjectContext.executeFetchRequest(fetched) as! [User]
+        }catch let error {
+            
+            print(error)
+        }
+        return res
+    }
+    
+    func selectById(managedObjectContext : NSManagedObjectContext,Id _id :Int64) ->User{
+        
+        
+        let users = selectBy(managedObjectContext, attribute: "userId", value: String(_id))
+        var user :User!
+        
+        if users.count > 0 {
+            user = users[0]
+        }
+        return user
+    }
+    
+    func delete(managedObjectContext : NSManagedObjectContext,Id _id :Int64){
+        let user = selectById(managedObjectContext, Id: _id)
+        do{
+            managedObjectContext.deleteObject(user)
+            try managedObjectContext.save()
+        }
+        catch let error {
+            print(error)
+        }
+    }
+    
+    func selectBy(managedObjectContext : NSManagedObjectContext,attribute : String , value :String) -> [User]{
+        
+        let fetchRequest = NSFetchRequest(entityName: "User")
+        let sortDescriptor = NSSortDescriptor(key: attribute, ascending: true)
+        
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        
+        // Create a new predicate that filters out any object that
+        
+        let predicate = NSPredicate(format: attribute + " = %@",value)
+        
+        fetchRequest.predicate = predicate
+        var res : [User]!
+        do{
+            res = try managedObjectContext.executeFetchRequest(fetchRequest) as! [User]
+        } catch let error {
+            print(error)
+        }
+        return res
+    }
+    
+    
 }

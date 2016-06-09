@@ -32,6 +32,7 @@
 		DC4AEFA01D099F7500661E19 /* Exhibitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4AEF961D099F7500661E19 /* Exhibitor.swift */; };
 		DC4AEFA11D099F7500661E19 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4AEF971D099F7500661E19 /* User+CoreDataProperties.swift */; };
 		DC4AEFA21D099F7500661E19 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4AEF981D099F7500661E19 /* User.swift */; };
+		DC4AEFA41D09A0E600661E19 /* SpeakerDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4AEFA31D09A0E600661E19 /* SpeakerDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		DC4AEF961D099F7500661E19 /* Exhibitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exhibitor.swift; sourceTree = "<group>"; };
 		DC4AEF971D099F7500661E19 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DC4AEF981D099F7500661E19 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DC4AEFA31D09A0E600661E19 /* SpeakerDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				DC4AEF651D099CA600661E19 /* UserDAO.swift */,
+				DC4AEFA31D09A0E600661E19 /* SpeakerDAO.swift */,
 			);
 			name = DAO;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				8CAD36A31D01BE3B009D0605 /* MMDrawerController.m in Sources */,
 				8C0D67AE1D01DC32003F9DD9 /* MyCustomViewCell.swift in Sources */,
 				DC4AEF9A1D099F7500661E19 /* Session.swift in Sources */,
+				DC4AEFA41D09A0E600661E19 /* SpeakerDAO.swift in Sources */,
 				8CAD36A71D01BEFB009D0605 /* LeftViewController.swift in Sources */,
 				DC4AEF9D1D099F7500661E19 /* ContactInfo+CoreDataProperties.swift in Sources */,
 				DC4AEF9C1D099F7500661E19 /* Speaker.swift in Sources */,
