@@ -18,7 +18,7 @@ class UserDAO  {
     }
     
     
-    func save(managedObjectContext : NSManagedObjectContext ,unmanagedUser user : User) -> User!{
+    func save(managedObjectContext : NSManagedObjectContext ,user : User) -> User!{
         
         let managedUser = NSEntityDescription.insertNewObjectForEntityForName("User", inManagedObjectContext: self.managedObjectContext!) as! User
 
@@ -106,7 +106,7 @@ class UserDAO  {
     }
     
     
-    func addContactInfo(managedObjectContext moc : NSManagedObjectContext , userId _id :Int64 , managedVehicle vehicle : ContactInfo){
+    func addContactInfo(managedObjectContext moc : NSManagedObjectContext , userId _id :Int64 ,  mangedContectinfo : ContactInfo ){
         
         let user = selectById(moc, Id: _id)
         let contactInfo = NSMutableSet(set: user.contactInfo!)
