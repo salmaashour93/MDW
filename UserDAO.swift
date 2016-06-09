@@ -64,7 +64,6 @@ class UserDAO  {
     
     func selectById(managedObjectContext : NSManagedObjectContext,Id _id :Int64) ->User{
         
-        
         let users = selectBy(managedObjectContext, attribute: "userId", value: String(_id))
         var user :User!
         
@@ -105,6 +104,16 @@ class UserDAO  {
         }
         return res
     }
+    
+    
+    func addContactInfo(managedObjectContext moc : NSManagedObjectContext , userId _id :Int64 , managedVehicle vehicle : ContactInfo){
+        
+        let user = selectById(moc, Id: _id)
+        let contactInfo = NSMutableSet(set: user.contactInfo!)
+        contactInfo.addObject(contactInfo)
+        user.contactInfo = contactInfo
+        
+     }
     
     
 }
