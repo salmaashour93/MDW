@@ -19,21 +19,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         
-        var rootViewController = self.window!.rootViewController
+        _ = self.window!.rootViewController
         
         let mainStoryBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
         
         
-        var leftDrawer =  mainStoryBoard.instantiateViewControllerWithIdentifier("LeftViewController") as! LeftViewController
-        var center = mainStoryBoard.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
+        let leftDrawer =  mainStoryBoard.instantiateViewControllerWithIdentifier("LeftViewController") as! LeftViewController
+        let center = mainStoryBoard.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
         
         
         
         
         
-        var leftSideNav = UINavigationController(rootViewController: leftDrawer)
-        var centerNav = UINavigationController(rootViewController: center)
+        let leftSideNav = UINavigationController(rootViewController: leftDrawer)
+        let centerNav = UINavigationController(rootViewController: center)
         
         
         

@@ -1,5 +1,5 @@
 //
-//  Speaker+CoreDataProperties.swift
+//  User+CoreDataProperties.swift
 //  MDW
 //
 //  Created by ZOBA on 6/9/16.
@@ -12,16 +12,18 @@
 import Foundation
 import CoreData
 
-extension Speaker {
+extension User {
 
-    @NSManaged var biography: String?
-    @NSManaged var compnyName: String?
+    @NSManaged var companyName: String?
+    @NSManaged var email: String?
     @NSManaged var firstName: String?
+    @NSManaged var image: NSData?
     @NSManaged var lastName: String?
     @NSManaged var middleName: String?
+    @NSManaged var password: String?
+    @NSManaged var qrCode: String?
     @NSManaged var title: String?
-    @NSManaged var image: NSData?
+    @NSManaged var userId: NSNumber?
     @NSManaged var contactInfo: NSSet?
-    @NSManaged var session: NSSet?
 
 }

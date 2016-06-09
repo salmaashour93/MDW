@@ -18,8 +18,8 @@ extension ContactInfo {
     @NSManaged var number: NSDecimalNumber?
     @NSManaged var ownerId: NSNumber?
     @NSManaged var ownerType: String?
-    @NSManaged var user: NSManagedObject?
-    @NSManaged var speaker: NSManagedObject?
-    @NSManaged var exhibitor: NSManagedObject?
+    @NSManaged var exhibitor: Exhibitor?
+    @NSManaged var speaker: Speaker?
+    @NSManaged var user: User?
 
 }

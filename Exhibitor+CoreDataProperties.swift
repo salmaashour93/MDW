@@ -14,9 +14,10 @@ import CoreData
 
 extension Exhibitor {
 
-    @NSManaged var compnyName: String?
     @NSManaged var companyUrl: String?
+    @NSManaged var compnyName: String?
     @NSManaged var image: NSDate?
+    @NSManaged var exhibitorId: NSNumber?
     @NSManaged var contactInfo: NSSet?
 
 }

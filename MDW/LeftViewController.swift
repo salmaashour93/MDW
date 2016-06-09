@@ -37,7 +37,7 @@ class LeftViewController: UIViewController , UITableViewDataSource, UITableViewD
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
         
     {
-        var mycell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as! MyCustomViewCell
+        let mycell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as! MyCustomViewCell
         
         mycell.textLabel?.text = menuItems[indexPath.row]
         
@@ -56,11 +56,11 @@ class LeftViewController: UIViewController , UITableViewDataSource, UITableViewD
             
         case 0:
             
-            var centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
+            let centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
             
-            var centerNavController = UINavigationController(rootViewController: centerViewController)
+            let centerNavController = UINavigationController(rootViewController: centerViewController)
             
-            var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             
             appDelegate.centerContainer!.centerViewController = centerNavController
             appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)

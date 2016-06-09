@@ -21,16 +21,17 @@
 		8CAD36A51D01BE3B009D0605 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAD36A11D01BE3B009D0605 /* UIViewController+MMDrawerController.m */; };
 		8CAD36A71D01BEFB009D0605 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAD36A61D01BEFB009D0605 /* LeftViewController.swift */; };
 		DC1919FE1D08FBCD00765D39 /* MDW.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC1919FC1D08FBCD00765D39 /* MDW.xcdatamodeld */; };
-		DC191A2A1D090EFB00765D39 /* ContactInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC191A201D090EFB00765D39 /* ContactInfo+CoreDataProperties.swift */; };
-		DC191A2B1D090EFB00765D39 /* ContactInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC191A211D090EFB00765D39 /* ContactInfo.swift */; };
-		DC191A2C1D090EFB00765D39 /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC191A221D090EFB00765D39 /* Session+CoreDataProperties.swift */; };
-		DC191A2D1D090EFB00765D39 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC191A231D090EFB00765D39 /* Session.swift */; };
-		DC191A2E1D090EFB00765D39 /* Speaker+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC191A241D090EFB00765D39 /* Speaker+CoreDataProperties.swift */; };
-		DC191A2F1D090EFB00765D39 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC191A251D090EFB00765D39 /* Speaker.swift */; };
-		DC191A301D090EFB00765D39 /* Exhibitor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC191A261D090EFB00765D39 /* Exhibitor+CoreDataProperties.swift */; };
-		DC191A311D090EFB00765D39 /* Exhibitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC191A271D090EFB00765D39 /* Exhibitor.swift */; };
-		DC191A321D090EFB00765D39 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC191A281D090EFB00765D39 /* User+CoreDataProperties.swift */; };
-		DC191A331D090EFB00765D39 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC191A291D090EFB00765D39 /* User.swift */; };
+		DC4AEF661D099CA600661E19 /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4AEF651D099CA600661E19 /* UserDAO.swift */; };
+		DC4AEF991D099F7500661E19 /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4AEF8F1D099F7500661E19 /* Session+CoreDataProperties.swift */; };
+		DC4AEF9A1D099F7500661E19 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4AEF901D099F7500661E19 /* Session.swift */; };
+		DC4AEF9B1D099F7500661E19 /* Speaker+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4AEF911D099F7500661E19 /* Speaker+CoreDataProperties.swift */; };
+		DC4AEF9C1D099F7500661E19 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4AEF921D099F7500661E19 /* Speaker.swift */; };
+		DC4AEF9D1D099F7500661E19 /* ContactInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4AEF931D099F7500661E19 /* ContactInfo+CoreDataProperties.swift */; };
+		DC4AEF9E1D099F7500661E19 /* ContactInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4AEF941D099F7500661E19 /* ContactInfo.swift */; };
+		DC4AEF9F1D099F7500661E19 /* Exhibitor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4AEF951D099F7500661E19 /* Exhibitor+CoreDataProperties.swift */; };
+		DC4AEFA01D099F7500661E19 /* Exhibitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4AEF961D099F7500661E19 /* Exhibitor.swift */; };
+		DC4AEFA11D099F7500661E19 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4AEF971D099F7500661E19 /* User+CoreDataProperties.swift */; };
+		DC4AEFA21D099F7500661E19 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4AEF981D099F7500661E19 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,16 +78,17 @@
 		8CAD36A11D01BE3B009D0605 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		8CAD36A61D01BEFB009D0605 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		DC1919FD1D08FBCD00765D39 /* MDW.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MDW.xcdatamodel; sourceTree = "<group>"; };
-		DC191A201D090EFB00765D39 /* ContactInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ContactInfo+CoreDataProperties.swift"; path = "poco/ContactInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DC191A211D090EFB00765D39 /* ContactInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactInfo.swift; path = poco/ContactInfo.swift; sourceTree = "<group>"; };
-		DC191A221D090EFB00765D39 /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Session+CoreDataProperties.swift"; path = "poco/Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DC191A231D090EFB00765D39 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Session.swift; path = poco/Session.swift; sourceTree = "<group>"; };
-		DC191A241D090EFB00765D39 /* Speaker+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Speaker+CoreDataProperties.swift"; path = "poco/Speaker+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DC191A251D090EFB00765D39 /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Speaker.swift; path = poco/Speaker.swift; sourceTree = "<group>"; };
-		DC191A261D090EFB00765D39 /* Exhibitor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Exhibitor+CoreDataProperties.swift"; path = "poco/Exhibitor+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DC191A271D090EFB00765D39 /* Exhibitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Exhibitor.swift; path = poco/Exhibitor.swift; sourceTree = "<group>"; };
-		DC191A281D090EFB00765D39 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "poco/User+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DC191A291D090EFB00765D39 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = poco/User.swift; sourceTree = "<group>"; };
+		DC4AEF651D099CA600661E19 /* UserDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
+		DC4AEF8F1D099F7500661E19 /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DC4AEF901D099F7500661E19 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		DC4AEF911D099F7500661E19 /* Speaker+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Speaker+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DC4AEF921D099F7500661E19 /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		DC4AEF931D099F7500661E19 /* ContactInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContactInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DC4AEF941D099F7500661E19 /* ContactInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactInfo.swift; sourceTree = "<group>"; };
+		DC4AEF951D099F7500661E19 /* Exhibitor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Exhibitor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DC4AEF961D099F7500661E19 /* Exhibitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exhibitor.swift; sourceTree = "<group>"; };
+		DC4AEF971D099F7500661E19 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DC4AEF981D099F7500661E19 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		8C6362091CF2400B00D4C917 = {
 			isa = PBXGroup;
 			children = (
+				DC4AEF641D099C8700661E19 /* DAO */,
 				DC191A341D090F0D00765D39 /* poco */,
 				8CAD36971D01BCFD009D0605 /* nav classes */,
 				8C6362141CF2400C00D4C917 /* MDW */,
@@ -190,18 +193,26 @@
 		DC191A341D090F0D00765D39 /* poco */ = {
 			isa = PBXGroup;
 			children = (
-				DC191A201D090EFB00765D39 /* ContactInfo+CoreDataProperties.swift */,
-				DC191A211D090EFB00765D39 /* ContactInfo.swift */,
-				DC191A221D090EFB00765D39 /* Session+CoreDataProperties.swift */,
-				DC191A231D090EFB00765D39 /* Session.swift */,
-				DC191A241D090EFB00765D39 /* Speaker+CoreDataProperties.swift */,
-				DC191A251D090EFB00765D39 /* Speaker.swift */,
-				DC191A261D090EFB00765D39 /* Exhibitor+CoreDataProperties.swift */,
-				DC191A271D090EFB00765D39 /* Exhibitor.swift */,
-				DC191A281D090EFB00765D39 /* User+CoreDataProperties.swift */,
-				DC191A291D090EFB00765D39 /* User.swift */,
+				DC4AEF8F1D099F7500661E19 /* Session+CoreDataProperties.swift */,
+				DC4AEF901D099F7500661E19 /* Session.swift */,
+				DC4AEF911D099F7500661E19 /* Speaker+CoreDataProperties.swift */,
+				DC4AEF921D099F7500661E19 /* Speaker.swift */,
+				DC4AEF931D099F7500661E19 /* ContactInfo+CoreDataProperties.swift */,
+				DC4AEF941D099F7500661E19 /* ContactInfo.swift */,
+				DC4AEF951D099F7500661E19 /* Exhibitor+CoreDataProperties.swift */,
+				DC4AEF961D099F7500661E19 /* Exhibitor.swift */,
+				DC4AEF971D099F7500661E19 /* User+CoreDataProperties.swift */,
+				DC4AEF981D099F7500661E19 /* User.swift */,
 			);
 			name = poco;
+			sourceTree = "<group>";
+		};
+		DC4AEF641D099C8700661E19 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				DC4AEF651D099CA600661E19 /* UserDAO.swift */,
+			);
+			name = DAO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,25 +346,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC191A2C1D090EFB00765D39 /* Session+CoreDataProperties.swift in Sources */,
+				DC4AEF9B1D099F7500661E19 /* Speaker+CoreDataProperties.swift in Sources */,
 				8CAD36A41D01BE3B009D0605 /* MMDrawerVisualState.m in Sources */,
 				8C6362181CF2400C00D4C917 /* ViewController.swift in Sources */,
+				DC4AEF661D099CA600661E19 /* UserDAO.swift in Sources */,
+				DC4AEFA01D099F7500661E19 /* Exhibitor.swift in Sources */,
+				DC4AEF9E1D099F7500661E19 /* ContactInfo.swift in Sources */,
 				DC1919FE1D08FBCD00765D39 /* MDW.xcdatamodeld in Sources */,
 				8CAD36A21D01BE3B009D0605 /* MMDrawerBarButtonItem.m in Sources */,
-				DC191A2B1D090EFB00765D39 /* ContactInfo.swift in Sources */,
-				DC191A2E1D090EFB00765D39 /* Speaker+CoreDataProperties.swift in Sources */,
+				DC4AEFA21D099F7500661E19 /* User.swift in Sources */,
 				8CAD36A51D01BE3B009D0605 /* UIViewController+MMDrawerController.m in Sources */,
-				DC191A321D090EFB00765D39 /* User+CoreDataProperties.swift in Sources */,
-				DC191A2D1D090EFB00765D39 /* Session.swift in Sources */,
+				DC4AEF9F1D099F7500661E19 /* Exhibitor+CoreDataProperties.swift in Sources */,
+				DC4AEFA11D099F7500661E19 /* User+CoreDataProperties.swift in Sources */,
 				8CAD36A31D01BE3B009D0605 /* MMDrawerController.m in Sources */,
-				DC191A2A1D090EFB00765D39 /* ContactInfo+CoreDataProperties.swift in Sources */,
 				8C0D67AE1D01DC32003F9DD9 /* MyCustomViewCell.swift in Sources */,
-				DC191A311D090EFB00765D39 /* Exhibitor.swift in Sources */,
-				DC191A2F1D090EFB00765D39 /* Speaker.swift in Sources */,
+				DC4AEF9A1D099F7500661E19 /* Session.swift in Sources */,
 				8CAD36A71D01BEFB009D0605 /* LeftViewController.swift in Sources */,
-				DC191A301D090EFB00765D39 /* Exhibitor+CoreDataProperties.swift in Sources */,
+				DC4AEF9D1D099F7500661E19 /* ContactInfo+CoreDataProperties.swift in Sources */,
+				DC4AEF9C1D099F7500661E19 /* Speaker.swift in Sources */,
 				8C6362161CF2400C00D4C917 /* AppDelegate.swift in Sources */,
-				DC191A331D090EFB00765D39 /* User.swift in Sources */,
+				DC4AEF991D099F7500661E19 /* Session+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

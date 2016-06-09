@@ -12,6 +12,7 @@
     <entity name="Exhibitor" representedClassName=".Exhibitor" syncable="YES">
         <attribute name="companyUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="compnyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="exhibitorId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="Date" syncable="YES"/>
         <relationship name="contactInfo" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ContactInfo" inverseName="exhibitor" inverseEntity="ContactInfo" syncable="YES"/>
     </entity>
@@ -34,6 +35,7 @@
         <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="middleName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="speakerId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="contactInfo" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ContactInfo" inverseName="speaker" inverseEntity="ContactInfo" syncable="YES"/>
         <relationship name="session" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Session" inverseName="speaker" inverseEntity="Session" syncable="YES"/>
@@ -48,13 +50,14 @@
         <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="qrCode" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <relationship name="contactInfo" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ContactInfo" inverseName="user" inverseEntity="ContactInfo" syncable="YES"/>
     </entity>
     <elements>
-        <element name="User" positionX="-360" positionY="-67" width="128" height="193"/>
-        <element name="Session" positionX="79" positionY="-99" width="128" height="193"/>
-        <element name="Speaker" positionX="70" positionY="164" width="128" height="178"/>
-        <element name="Exhibitor" positionX="-191" positionY="176" width="128" height="103"/>
         <element name="ContactInfo" positionX="-110" positionY="-117" width="128" height="148"/>
+        <element name="Exhibitor" positionX="-191" positionY="176" width="128" height="118"/>
+        <element name="Session" positionX="79" positionY="-99" width="128" height="193"/>
+        <element name="Speaker" positionX="70" positionY="164" width="128" height="193"/>
+        <element name="User" positionX="-360" positionY="-67" width="128" height="208"/>
     </elements>
 </model>
