@@ -1,0 +1,6 @@
+framework module Pods_MDW {
+  umbrella header "Pods-MDW-umbrella.h"
+
+  export *
+  module * { export * }
+}

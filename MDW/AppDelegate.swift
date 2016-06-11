@@ -13,45 +13,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var centerContainer: MMDrawerController?
-
+    var defaults : NSUserDefaults = NSUserDefaults.standardUserDefaults()
+    var currentUsername : String?
+    var currentUser : User?
+    var sessions : [Session]?
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        
-        _ = self.window!.rootViewController
+        //        var rootViewController = self.window!.rootViewController
         
         let mainStoryBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
-        
-        
-        let leftDrawer =  mainStoryBoard.instantiateViewControllerWithIdentifier("LeftViewController") as! LeftViewController
-        let center = mainStoryBoard.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
-        
-        
-        
-        
-        
-        let leftSideNav = UINavigationController(rootViewController: leftDrawer)
-        let centerNav = UINavigationController(rootViewController: center)
-        
-        
-        
-        leftDrawer.title="MDW"
-        
-        centerContainer = MMDrawerController(centerViewController: centerNav, leftDrawerViewController: leftSideNav)
-        
-        centerContainer!.openDrawerGestureModeMask = MMOpenDrawerGestureMode.PanningCenterView;
-        centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.PanningCenterView;
-        
-        
-        
-        
-        window!.rootViewController = centerContainer
-        window!.makeKeyAndVisible()
-        
-        
-        
+        if (defaults.objectForKey("username") == nil) {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let loginViewController : LoginViewController = storyboard.instantiateViewControllerWithIdentifier("loginView") as! LoginViewController
+            self.window?.rootViewController = loginViewController
+        } else {
+            self.currentUsername = defaults.objectForKey("username") as? String
+            
+            let leftDrawer =  mainStoryBoard.instantiateViewControllerWithIdentifier("LeftViewController") as! LeftViewController
+            let center = mainStoryBoard.instantiateViewControllerWithIdentifier("ViewController") as! UITabBarController
+            
+            let leftSideNav = UINavigationController(rootViewController: leftDrawer)
+            let centerNav = UINavigationController(rootViewController: center)
+            
+            leftDrawer.title="MDW"
+            
+            centerContainer = MMDrawerController(centerViewController: centerNav, leftDrawerViewController: leftSideNav)
+            
+            centerContainer!.openDrawerGestureModeMask = MMOpenDrawerGestureMode.PanningCenterView;
+            centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.PanningCenterView;
+            
+            window!.rootViewController = centerContainer
+            window!.makeKeyAndVisible()
+        }
         return true
     }
 
